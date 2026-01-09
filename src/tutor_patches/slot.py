@@ -47,7 +47,7 @@ class Slot(BaseModel):
         return f"""{{
   op: PLUGIN_OPERATIONS.{self.operation.value},
   widget: {{
-    id: '{self.slot_name}_{self.component}',
+    id: '{self.slot_name.replace('.', '_')}_{self.component}',
     type: {self.plugin_type.value},
     priority: {self.priority},
     RenderWidget: {self.component},

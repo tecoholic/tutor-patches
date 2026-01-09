@@ -3,7 +3,7 @@ KNOWN_MFES = frozenset({
     "account",
     "authn",
     "communications",
-    "course-authoring",
+    "authoring",
     "discussions",
     "gradebook",
     "learner-dashboard",
